@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <h1>Personal Budget Tracker</h1>
+    <label for="userName">Enter Your Name: </label>
+    <input type="text" id="userName" /> <br />
+
+    <div class="input1">
+      <label for="income">Enter Your Total Income (tk): </label>
+      <input type="number" id="income" /> <br />
+
+      <label for="numOfexpenses">Number Of Expense Do You Have: </label>
+      <input type="number" id="numOfexpenses" /> <br />
+
+      <button id="startBudget">Start Budgeting</button>
+
+      <div id="expensesInputDiv"></div>
+    </div>
+
+    <button id="calculateBudget" style="display: none">Calculate Budget</button>
+
+    <button id="clearBudget" style="display: none">Clear Budget</button>
+
+    <div id="BudgetResult" class="result"></div>
+
+    <script src="/script.js"></script>
+  </body>
+</html>
