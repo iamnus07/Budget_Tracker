@@ -1,29 +1,27 @@
-/* Global Styles */
 body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   text-align: center;
   background-color: #f4f7f9;
   color: #333;
-  padding: 20px;
+  padding: 30px 60px;
 }
 
-/* Input Fields */
 input {
-  margin: 8px;
-  padding: 10px;
-  width: 250px;
+  margin: 10px;
+  padding: 12px;
+  width: 300px;
+  max-width: 90%;
   border: 1px solid #ccc;
-  border-radius: 6px;
+  border-radius: 8px;
   font-size: 16px;
-  background-color: #ffffff;
+  background-color: #fff;
   color: #333;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
 }
 
-/* Buttons */
 button {
-  padding: 10px 20px;
-  margin: 8px;
+  padding: 12px 25px;
+  margin: 10px;
   cursor: pointer;
   border: none;
   border-radius: 6px;
@@ -37,31 +35,30 @@ button:hover {
   background-color: #005fa3;
 }
 
-/* Labels */
 label {
   color: #0077cc;
   font-weight: 500;
   font-size: 16px;
+  display: inline-block;
+  margin-top: 10px;
 }
 
-/* Results Section */
+/* Result box styling */
 .result {
   margin-top: 30px;
-  padding: 20px;
+  padding: 25px;
   border-radius: 10px;
   background-color: #e8f4ff;
   font-size: 18px;
   font-weight: 500;
   color: #222;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
 }
 
-/* Highlight warning in result */
 .result p strong {
   color: #d40000;
 }
 
-/* Emoji-enhanced headings */
 .result p::before {
   display: inline-block;
   margin-right: 6px;
@@ -93,4 +90,66 @@ label {
 }
 .result p:nth-child(9)::before {
   content: "⚠️";
+}
+
+/* Layout helpers */
+.input1 {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+/* Medium Devices (Tablets) */
+
+@media screen and (max-width: 991px) {
+  body {
+    padding: 20px 30px;
+  }
+
+  input {
+    width: 90%;
+    font-size: 15px;
+  }
+
+  button {
+    font-size: 15px;
+    padding: 10px 20px;
+  }
+
+  .result {
+    font-size: 17px;
+    padding: 20px;
+  }
+}
+
+/* Small Devices (Phones) */
+
+@media screen and (max-width: 576px) {
+  body {
+    padding: 15px 10px;
+  }
+
+  input {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  button {
+    width: 100%;
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  label {
+    font-size: 15px;
+    display: block;
+    text-align: left;
+    margin-left: 10px;
+  }
+
+  .result {
+    font-size: 16px;
+    padding: 15px;
+  }
 }
